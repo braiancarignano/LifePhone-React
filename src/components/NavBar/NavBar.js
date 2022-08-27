@@ -6,8 +6,8 @@ const NavBar = () => {
   return (
     <div>
        <nav className="flex items-center justify-between flex-wrap bg-slate-800 p-3">
-  <div className="flex items-center flex-shrink-0 text-white mr-6">
-  <img className='h-20 w-30' src={image} alt="Logo"/>
+  <div className="flex items-center flex-shrink-0 text-white mr-2">
+  <img className=' ml-8 h-20 w-30' src={image} alt="Logo"/>
   </div>
   <div className="block lg:hidden">
     <button id='boton' className="flex items-center px-3 py-2 border rounded text-sky-200 border-sky-400 hover:text-white hover:border-white">
@@ -16,18 +16,18 @@ const NavBar = () => {
   </div>
   <div id='menu' className="w-full block lg:flex-grow lg:flex lg:items-center lg:w-auto">
     <div className="text-sm lg:flex-grow">
-      <a href="#x" className="block border-b text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28">
+      <a href="#x" className="block border-b text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28">
         Inicio
       </a>
-      <a href="#x" className="block border-b text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28">
+      <a href="#x" className="block border-b text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28">
         Productos
       </a>
-      <a href="#x" className="block border-b text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent text-white hover:text-sky-400 hover:border-sky-800">
+      <a href="#x" className="block border-b text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800">
         Contacto
       </a>
     </div>
     <div>
-    <input className="rounded-full border-slate-200 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 py-1 px-2 m-8" placeholder='¿Qué estás buscando?  🔍︎'/>
+    <input className="rounded-full shadow-inner border-slate-200 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 py-1 px-2 m-8" placeholder='¿Qué estás buscando?  🔍︎'/>
     </div>
     <div>
         <CardWidget/>
