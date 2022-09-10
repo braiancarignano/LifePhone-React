@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import Loader from '../Loader/Loader';
 
 const ItemDetailContainer = () => {
-    const [products, setJugador] = useState()
+    const [products, setProduct] = useState()
     const [loading, setLoading] = useState(false)
     const {productId} = useParams();
 
@@ -13,7 +13,7 @@ const ItemDetailContainer = () => {
         setLoading(true)
         getProductsById(productId)
             .then(products => {
-                setJugador(products)
+                setProduct(products)
                 setLoading(false)
             })
             .catch(error => {

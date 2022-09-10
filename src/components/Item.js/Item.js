@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Item = ({ id, price, name, img, brand }) => {
+const Item = ({ id, name, img, brand }) => {
   return (
     <div className="w-80 bg-white shadow-xl rounded-xl  m-8">
       <div className="h-48 w-full rounded-t-xl bg-gray-300 flex flex-col justify-center bg-cover bg-center">
