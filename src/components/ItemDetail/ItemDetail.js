@@ -1,6 +1,7 @@
 import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useCartContext } from '../../context/CartContext';
 const ItemDetail = ({
   name,
   brand,
@@ -17,10 +18,13 @@ const ItemDetail = ({
   connectivity,
   size,
   stock,
+  data
 }) => {
+  const { addProduct } = useCartContext();
   const [buy, setBuy] = useState(false);
   const handleOnAdd = (quantity) => {
     alert(`Se agrego: ${quantity} ${brand} ${name}`);
+    addProduct(data, quantity)
     setBuy(true);
   };
   return (
