@@ -54,7 +54,7 @@ const ItemDetail = ({
           {buy ? (
             <Link to={`/cart`}>
               <button className="py-4 px-6 mb-3 mx-auto shadow-lg shadow-slate-500/50 bg-sky-500 text-white rounded hover:bg-sky-600 active:bg-sky-300 disabled:opacity-50  flex items-center justify-center">
-                Ir a Pagar
+                Terminar Compra
               </button>
             </Link>
           ) : (
