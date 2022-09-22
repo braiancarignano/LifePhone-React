@@ -35,7 +35,7 @@ const ItemDetail = ({
         </h1>
         <img className="m-auto" src={img} alt="Smartphone" />
         <h2 className="text-center text-4xl rounded-lg mx-40 p-6 bg-slate-800 text-white">
-          {price}
+          ${price}
         </h2>
       </div>
       <div className="col-span-2 rounded-lg border-4 border-slate-800">

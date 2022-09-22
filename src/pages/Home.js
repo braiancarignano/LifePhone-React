@@ -1,9 +1,15 @@
 import React from 'react'
+import Carousel from '../components/Carrousel/Carrousel'
+import Footer from '../components/Footer/Footer';
+import "swiper/css/bundle";
+
 
 const home = () => {
   return (
     <div>
-        <h1>Proximamente Home</h1>
+        <Carousel/>
+        <Footer/>
+
     </div>
   )
 }

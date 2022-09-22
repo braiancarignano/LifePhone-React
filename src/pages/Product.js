@@ -1,9 +1,11 @@
 import React from "react";
+import Footer from "../components/Footer/Footer";
 import { Link } from "react-router-dom";
 import ItemListContainer from "../components/ItemListContainer/ItemListContainer";
 
 const Product = () => {
   return (
+    <div>
     <div className="text-slate-800 justify-items-center grid grid-cols-5">
       <div className="list-none w-60">
         <h1 className="font-bold text-2xl border-b-2 p-2">Marcas</h1>
@@ -30,8 +32,10 @@ const Product = () => {
       </div>
       <div className="col-span-4">
         <ItemListContainer />
-      </div>
+      </div> 
     </div>
+    <Footer/>
+      </div>
   );
 };
 

@@ -12,7 +12,7 @@ const CardProduct = ({ image, name, price, brand }) => {
           {brand}
         </p>
         <h1 className="text-gray-800 font-bold text-center mt-1">{name}</h1>
-        <p className="text-center text-gray-800 mt-1">{price}</p>
+        <p className="text-center text-gray-800 mt-1">${price}</p>
         <ItemCount/>
         <button className="py-2 px-4 shadow-lg shadow-slate-500/50 bg-sky-500 text-white rounded hover:bg-sky-600 active:bg-sky-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center">
           Agregar Carrito

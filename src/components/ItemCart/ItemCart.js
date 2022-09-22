@@ -19,7 +19,7 @@ const ItemCart = ({product}) => {
         </div>
         <div className='mx-10'>
         <h3 className="text-lg font-bold">Precio:</h3>
-        <li className="font-semibold my-2 text-center">{product.price}</li>
+        <li className="font-semibold my-2 text-center">${product.price}</li>
         </div>
         <div className='mx-10'>
         <h3 className="text-lg font-bold">Cantidad:</h3>
