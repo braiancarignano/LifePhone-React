@@ -6,19 +6,18 @@ const products = [
         price:"90000",
         img:"https://images.samsung.com/is/image/samsung/p6pim/ar/sm-a336mzkfaro/gallery/ar-galaxy-a33-5g-a336-sm-a336mzkfaro-532010030?$650_519_PNG$", 
         memory: '128',  
-        screen:`PANTALLA: Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
-        processor:"PROCESADOR: Exynos 1280 - GPU Mali-G68",
-        memoryRam:"MEMORIA RAM: 6/8 GB",
-        cameraBack:`CÁMARAS TRASERAS: 
-        Principal: 48 megapíxeles f/1.8, OIS 
+        screen:`Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
+        processor:"Exynos 1280 - GPU Mali-G68",
+        memoryRam:"6/8 GB",
+        cameraBack:`Principal: 48 megapíxeles f/1.8, OIS 
         Angular: 8 megapíxeles f/2.2 
         Profundidad: 2 megapíxeles f/2.4 
         Macro: 5 megapíxeles f/2.4`,
-        cameraFront:"CÁMARA FRONTAL: 13 megapíxeles f/2.2",
-        batery:"BATERÍA: 5.000 mAh - Carga rápida de 25 W",
-        system:"SISTEMA: Android 12 - One UI 4.1",
-        connectivity:"CONECTIVIDAD: 5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
-        size:"DIMENSIONES Y PESO 159,7 x 74 x 8,1 milímetros - 186 gramos",
+        cameraFront:"13 megapíxeles f/2.2",
+        batery:"5.000 mAh - Carga rápida de 25 W",
+        system:"Android 12 - One UI 4.1",
+        connectivity:"5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
+        size:"159,7 x 74 x 8,1 milímetros - 186 gramos",
         stock: "3"
     },
     { 
@@ -28,19 +27,18 @@ const products = [
         price:"90000",
         img:"https://images.samsung.com/is/image/samsung/p6pim/ar/2202/gallery/ar-galaxy-a53-5g-a536-sm-a536ezwaaro-531544722?$650_519_PNG$", 
         memory: '128',  
-        screen:`PANTALLA: Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
-        processor:"PROCESADOR: Exynos 1280 - GPU Mali-G68",
-        memoryRam:"MEMORIA RAM: 6/8 GB",
-        cameraBack:`CÁMARAS TRASERAS: 
-        Principal: 48 megapíxeles f/1.8, OIS 
+        screen:`Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
+        processor:"Exynos 1280 - GPU Mali-G68",
+        memoryRam:"6/8 GB",
+        cameraBack:`Principal: 48 megapíxeles f/1.8, OIS 
         Angular: 8 megapíxeles f/2.2 
         Profundidad: 2 megapíxeles f/2.4 
         Macro: 5 megapíxeles f/2.4`,
-        cameraFront:"CÁMARA FRONTAL: 13 megapíxeles f/2.2",
-        batery:"BATERÍA: 5.000 mAh - Carga rápida de 25 W",
-        system:"SISTEMA: Android 12 - One UI 4.1",
-        connectivity:"CONECTIVIDAD: 5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
-        size:"DIMENSIONES Y PESO 159,7 x 74 x 8,1 milímetros - 186 gramos",
+        cameraFront:"13 megapíxeles f/2.2",
+        batery:"5.000 mAh - Carga rápida de 25 W",
+        system:"Android 12 - One UI 4.1",
+        connectivity:"5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
+        size:"159,7 x 74 x 8,1 milímetros - 186 gramos",
         stock: "3"
     },
     {   
@@ -50,19 +48,18 @@ const products = [
         price:"90000",
         img:"https://images.samsung.com/is/image/samsung/p6pim/uy/sm-s901ezgjltu/gallery/uy-galaxy-s22-s901-413439-sm-s901ezgjltu-531207833?$650_519_PNG$", 
         memory: '256',  
-        screen:`PANTALLA: Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
-        processor:"PROCESADOR: Exynos 1280 - GPU Mali-G68",
-        memoryRam:"MEMORIA RAM: 6/8 GB",
-        cameraBack:`CÁMARAS TRASERAS: 
-        Principal: 48 megapíxeles f/1.8, OIS 
+        screen:`Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
+        processor:"Exynos 1280 - GPU Mali-G68",
+        memoryRam:"6/8 GB",
+        cameraBack:`Principal: 48 megapíxeles f/1.8, OIS 
         Angular: 8 megapíxeles f/2.2 
         Profundidad: 2 megapíxeles f/2.4 
         Macro: 5 megapíxeles f/2.4`,
-        cameraFront:"CÁMARA FRONTAL: 13 megapíxeles f/2.2",
-        batery:"BATERÍA: 5.000 mAh - Carga rápida de 25 W",
-        system:"SISTEMA: Android 12 - One UI 4.1",
-        connectivity:"CONECTIVIDAD: 5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
-        size:"DIMENSIONES Y PESO 159,7 x 74 x 8,1 milímetros - 186 gramos",
+        cameraFront:"13 megapíxeles f/2.2",
+        batery:"5.000 mAh - Carga rápida de 25 W",
+        system:"Android 12 - One UI 4.1",
+        connectivity:"5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
+        size:"159,7 x 74 x 8,1 milímetros - 186 gramos",
         stock: "3"
     },
     {   
@@ -72,19 +69,18 @@ const products = [
         price:"90000",
         img:"https://cdn-xiaomi.waugi.com.ar/745-thickbox_default/redmi-9a-2gb-ram-32gb-rom.jpg", 
         memory: '128',  
-        screen:`PANTALLA: Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
-        processor:"PROCESADOR: Exynos 1280 - GPU Mali-G68",
-        memoryRam:"MEMORIA RAM: 6/8 GB",
-        cameraBack:`CÁMARAS TRASERAS: 
-        Principal: 48 megapíxeles f/1.8, OIS 
+        screen:`Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
+        processor:"Exynos 1280 - GPU Mali-G68",
+        memoryRam:"6/8 GB",
+        cameraBack:`Principal: 48 megapíxeles f/1.8, OIS 
         Angular: 8 megapíxeles f/2.2 
         Profundidad: 2 megapíxeles f/2.4 
         Macro: 5 megapíxeles f/2.4`,
-        cameraFront:"CÁMARA FRONTAL: 13 megapíxeles f/2.2",
-        batery:"BATERÍA: 5.000 mAh - Carga rápida de 25 W",
-        system:"SISTEMA: Android 12 - One UI 4.1",
-        connectivity:"CONECTIVIDAD: 5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
-        size:"DIMENSIONES Y PESO 159,7 x 74 x 8,1 milímetros - 186 gramos",
+        cameraFront:"13 megapíxeles f/2.2",
+        batery:"5.000 mAh - Carga rápida de 25 W",
+        system:"Android 12 - One UI 4.1",
+        connectivity:"5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
+        size:"159,7 x 74 x 8,1 milímetros - 186 gramos",
         stock: "3"
     },
     {   
@@ -94,19 +90,18 @@ const products = [
         price:"90000",
         img:"https://cdn-xiaomi.waugi.com.ar/713-thickbox_default/redmi-note-10s-6g-ram-64g-rom.jpg", 
         memory: '128',  
-        screen:`PANTALLA: Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
-        processor:"PROCESADOR: Exynos 1280 - GPU Mali-G68",
-        memoryRam:"MEMORIA RAM: 6/8 GB",
-        cameraBack:`CÁMARAS TRASERAS: 
-        Principal: 48 megapíxeles f/1.8, OIS 
+        screen:`Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
+        processor:"Exynos 1280 - GPU Mali-G68",
+        memoryRam:"6/8 GB",
+        cameraBack:`Principal: 48 megapíxeles f/1.8, OIS 
         Angular: 8 megapíxeles f/2.2 
         Profundidad: 2 megapíxeles f/2.4 
         Macro: 5 megapíxeles f/2.4`,
-        cameraFront:"CÁMARA FRONTAL: 13 megapíxeles f/2.2",
-        batery:"BATERÍA: 5.000 mAh - Carga rápida de 25 W",
-        system:"SISTEMA: Android 12 - One UI 4.1",
-        connectivity:"CONECTIVIDAD: 5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
-        size:"DIMENSIONES Y PESO 159,7 x 74 x 8,1 milímetros - 186 gramos",
+        cameraFront:"13 megapíxeles f/2.2",
+        batery:"5.000 mAh - Carga rápida de 25 W",
+        system:"Android 12 - One UI 4.1",
+        connectivity:"5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
+        size:"159,7 x 74 x 8,1 milímetros - 186 gramos",
         stock: "3"
     },
     {   
@@ -116,19 +111,18 @@ const products = [
         price:"90000",
         img:"https://cdn-xiaomi.waugi.com.ar/1418-home_default/redmi-note-11-pro-5g-6gb-ram-128gb-rom-graphite-gray-.jpg", 
         memory: '256',  
-        screen:`PANTALLA: Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
-        processor:"PROCESADOR: Exynos 1280 - GPU Mali-G68",
-        memoryRam:"MEMORIA RAM: 6/8 GB",
-        cameraBack:`CÁMARAS TRASERAS: 
-        Principal: 48 megapíxeles f/1.8, OIS 
+        screen:`Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
+        processor:"Exynos 1280 - GPU Mali-G68",
+        memoryRam:"6/8 GB",
+        cameraBack:`Principal: 48 megapíxeles f/1.8, OIS 
         Angular: 8 megapíxeles f/2.2 
         Profundidad: 2 megapíxeles f/2.4 
         Macro: 5 megapíxeles f/2.4`,
-        cameraFront:"CÁMARA FRONTAL: 13 megapíxeles f/2.2",
-        batery:"BATERÍA: 5.000 mAh - Carga rápida de 25 W",
-        system:"SISTEMA: Android 12 - One UI 4.1",
-        connectivity:"CONECTIVIDAD: 5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
-        size:"DIMENSIONES Y PESO 159,7 x 74 x 8,1 milímetros - 186 gramos",
+        cameraFront:"13 megapíxeles f/2.2",
+        batery:"5.000 mAh - Carga rápida de 25 W",
+        system:"Android 12 - One UI 4.1",
+        connectivity:"5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
+        size:"159,7 x 74 x 8,1 milímetros - 186 gramos",
         stock: "3"
     },
     {   
@@ -138,19 +132,18 @@ const products = [
         price:"90000",
         img:"https://i.pinimg.com/originals/74/06/2a/74062a448bb65a9515a3ee4705b8f521.png", 
         memory: '128',  
-        screen:`PANTALLA: Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
-        processor:"PROCESADOR: Exynos 1280 - GPU Mali-G68",
-        memoryRam:"MEMORIA RAM: 6/8 GB",
-        cameraBack:`CÁMARAS TRASERAS: 
-        Principal: 48 megapíxeles f/1.8, OIS 
+        screen:`Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
+        processor:"Exynos 1280 - GPU Mali-G68",
+        memoryRam:"6/8 GB",
+        cameraBack:`Principal: 48 megapíxeles f/1.8, OIS 
         Angular: 8 megapíxeles f/2.2 
         Profundidad: 2 megapíxeles f/2.4 
         Macro: 5 megapíxeles f/2.4`,
-        cameraFront:"CÁMARA FRONTAL: 13 megapíxeles f/2.2",
-        batery:"BATERÍA: 5.000 mAh - Carga rápida de 25 W",
-        system:"SISTEMA: Android 12 - One UI 4.1",
-        connectivity:"CONECTIVIDAD: 5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
-        size:"DIMENSIONES Y PESO 159,7 x 74 x 8,1 milímetros - 186 gramos",
+        cameraFront:"13 megapíxeles f/2.2",
+        batery:"5.000 mAh - Carga rápida de 25 W",
+        system:"Android 12 - One UI 4.1",
+        connectivity:"5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
+        size:"159,7 x 74 x 8,1 milímetros - 186 gramos",
         stock: "3"
     }
     ,
@@ -161,19 +154,18 @@ const products = [
         price:"90000",
         img:"https://static.wixstatic.com/media/7d0b48_e9f6779bb47b43e095ca9016353b6aee~mv2_d_1386_1408_s_2.png/v1/fill/w_498,h_506,al_c,usm_0.66_1.00_0.01/7d0b48_e9f6779bb47b43e095ca9016353b6aee~mv2_d_1386_1408_s_2.png", 
         memory: '256',  
-        screen:`PANTALLA: Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
-        processor:"PROCESADOR: Exynos 1280 - GPU Mali-G68",
-        memoryRam:"MEMORIA RAM: 6/8 GB",
-        cameraBack:`CÁMARAS TRASERAS: 
-        Principal: 48 megapíxeles f/1.8, OIS 
+        screen:`Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
+        processor:"Exynos 1280 - GPU Mali-G68",
+        memoryRam:"6/8 GB",
+        cameraBack:`Principal: 48 megapíxeles f/1.8, OIS 
         Angular: 8 megapíxeles f/2.2 
         Profundidad: 2 megapíxeles f/2.4 
         Macro: 5 megapíxeles f/2.4`,
-        cameraFront:"CÁMARA FRONTAL: 13 megapíxeles f/2.2",
-        batery:"BATERÍA: 5.000 mAh - Carga rápida de 25 W",
-        system:"SISTEMA: Android 12 - One UI 4.1",
-        connectivity:"CONECTIVIDAD: 5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
-        size:"DIMENSIONES Y PESO 159,7 x 74 x 8,1 milímetros - 186 gramos",
+        cameraFront:"13 megapíxeles f/2.2",
+        batery:"5.000 mAh - Carga rápida de 25 W",
+        system:"Android 12 - One UI 4.1",
+        connectivity:"5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
+        size:"159,7 x 74 x 8,1 milímetros - 186 gramos",
         stock: "3"
     }
     ,
@@ -184,19 +176,18 @@ const products = [
         price:"90000",
         img:"https://storage.comprasmartphone.com/smartphones/apple-iphone-13-pro-max.png", 
         memory: '256',  
-        screen:`PANTALLA: Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
-        processor:"PROCESADOR: Exynos 1280 - GPU Mali-G68",
-        memoryRam:"MEMORIA RAM: 6/8 GB",
-        cameraBack:`CÁMARAS TRASERAS: 
-        Principal: 48 megapíxeles f/1.8, OIS 
+        screen:`Super AMOLED de 6,4 pulgada - Full HD+ - Refresco a 90 Hz - Gorilla Glass 5`,
+        processor:"Exynos 1280 - GPU Mali-G68",
+        memoryRam:"6/8 GB",
+        cameraBack:`Principal: 48 megapíxeles f/1.8, OIS 
         Angular: 8 megapíxeles f/2.2 
         Profundidad: 2 megapíxeles f/2.4 
         Macro: 5 megapíxeles f/2.4`,
-        cameraFront:"CÁMARA FRONTAL: 13 megapíxeles f/2.2",
-        batery:"BATERÍA: 5.000 mAh - Carga rápida de 25 W",
-        system:"SISTEMA: Android 12 - One UI 4.1",
-        connectivity:"CONECTIVIDAD: 5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
-        size:"DIMENSIONES Y PESO 159,7 x 74 x 8,1 milímetros - 186 gramos",
+        cameraFront:"13 megapíxeles f/2.2",
+        batery:"5.000 mAh - Carga rápida de 25 W",
+        system:"Android 12 - One UI 4.1",
+        connectivity:"5G - WiFi 5 - Bluetooth 5.1 - GPS - USB tipo C ",
+        size:"159,7 x 74 x 8,1 milímetros - 186 gramos",
         stock: "3"
     }
   ]

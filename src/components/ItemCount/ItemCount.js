@@ -60,10 +60,10 @@ const ItemCount = ({ stock, onAdd }) => {
         </svg>
       </button>
       <button
-        className="text-lg font-semibold text-center ml-10 p-1 shadow-lg shadow-slate-500/50 bg-sky-500 text-white rounded hover:bg-sky-600 active:bg-sky-300 disabled:opacity-50  flex items-center justify-center"
+        className="text-lg font-semibold text-center ml-10 p-3 shadow-lg shadow-slate-500/50 bg-sky-500 text-white rounded hover:bg-sky-600 active:bg-sky-300 disabled:opacity-50  flex items-center justify-center"
         onClick={() => onAdd(initial)}
       >
-        Agregar al carrito
+        AGREGAR
       </button>
     </div>
   );

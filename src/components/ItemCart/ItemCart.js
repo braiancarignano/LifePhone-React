@@ -1,40 +1,31 @@
-import { useCartContext } from "../../context/CartContext";
-
-const ItemCart = ({product}) => {
-    const { removeProductInCart} = useCartContext();
+const ItemCart = ({ product, removeProductInCart }) => {
+  const total = product.price * product.quantity;
   return (
-    <div className='flex m-4 rounded-2xl border-4 border-slate-800 '>
-    <div>
-      <img src={product.img} className="w-38 h-32" alt=""></img>
+    <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
+      <div class="flex w-2/5">
+        <div class="w-20">
+          <img class="h-20" src={product.img} alt="" />
+        </div>
+        <div class="flex flex-col justify-between ml-4 flex-grow">
+          <span class="font-semibold text-slate-800">{product.name}</span>
+          <span class="text-gray-600 text-xs capitalize">{product.brand}</span>
+          <button
+            class="w-24 text-left font-semibold hover:text-red-500 text-gray-500 text-xs"
+            onClick={() => removeProductInCart(product.id)}
+          >
+            Eliminar
+          </button>
+        </div>
+      </div>
+      <span class="text-center w-1/5 font-semibold text-sm">
+        {product.quantity}
+      </span>
+      <span class="text-center w-1/5 font-semibold text-sm">
+        ${product.price}
+      </span>
+      <span class="text-center w-1/5 font-semibold text-sm">${total}</span>
     </div>
-    <div className="w-full">
-      <ul className="flex justify-around p-8">
-        <div className='mx-10'>
-        <h3 className="text-lg font-bold">Marca:</h3>
-        <li className="font-semibold my-2 text-center capitalize">{product.brand}</li>
-        </div>
-        <div className='mx-10'>
-        <h3 className="text-lg font-bold">Producto:</h3>
-        <li className="font-semibold my-2 text-center">{product.name}</li>
-        </div>
-        <div className='mx-10'>
-        <h3 className="text-lg font-bold">Precio:</h3>
-        <li className="font-semibold my-2 text-center">${product.price}</li>
-        </div>
-        <div className='mx-10'>
-        <h3 className="text-lg font-bold">Cantidad:</h3>
-        <li className="font-semibold my-2 text-center">{product.quantity}</li>
-        </div>
-      <button
-        className="p-2 rounded-xl shadow-slate-500/50 bg-red-600 hover:bg-red-500 active:bg-red-300"
-        onClick={() => removeProductInCart(product.id)}
-      >
-        <img src="https://res.cloudinary.com/braian/image/upload/v1663252093/trash_1_emme4a.png" alt=""></img>
-      </button>
-      </ul>
-    </div>
-  </div>
-  )
-}
+  );
+};
 
-export default ItemCart
+export default ItemCart;

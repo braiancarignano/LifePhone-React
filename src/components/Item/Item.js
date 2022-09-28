@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Item = ({ id, name, img, price, brand }) => {
+const Item = ({ id, name, imguno, price, brand }) => {
   return (
-    <div className="w-80 bg-white shadow-xl rounded-xl  m-8">
-      <div className="h-48 w-full rounded-t-xl bg-gray-300 flex flex-col justify-center bg-cover bg-center">
-        <img className="h-56 w-full" src={img} alt="Imagen Producto" />
+    <div className="w-80 bg-white border- shadow-xl rounded-xl  m-8">
+      <div className="h-60 w-full rounded-t-xl bg-gray-300 flex flex-col justify-center bg-cover bg-center">
+        <img className="h-full rounded-t-xl w-full" src={imguno} alt="Imagen Producto" />
       </div>
       <div className="p-4 flex flex-col items-center">
         <h2 className="text-gray-800 capitalize text-center">{brand}</h2>

@@ -17,15 +17,15 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route
-              path="product/memory/:memoryId"
+              path="product/memory/:id"
               element={<ItemListContainer />}
             />
             <Route
-              path="product/brand/:brandId"
+              path="product/brand/:id"
               element={<ItemListContainer />}
             />
             <Route
-              path="product/detail/:productId"
+              path="product/detail/:id"
               element={<ItemDetailContainer />}
             />
             <Route path="/product" element={<Product />} />
