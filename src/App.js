@@ -7,6 +7,7 @@ import Product from "./pages/Product";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailConteiner/ItemDetailContainer";
 import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/product" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </CartProvider>
       </Router>

@@ -37,7 +37,7 @@ const ItemDetailContainer = () => {
   return (
     <div>
       {products.map((product) => (
-        <ItemDetail key={product.id} {...product} />
+        <ItemDetail key={product.id} {...product} data={products[0]} />
       ))}
     </div>
   );

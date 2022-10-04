@@ -13,6 +13,8 @@ const ItemDetail = ({
   imguno,
   imgdos,
   imgtres,
+  memory,
+  memoryram,
   screen,
   processor,
   cameraBack,
@@ -30,20 +32,20 @@ const ItemDetail = ({
   };
   return (
     <div>
-      <section class="text-gray-700 body-font overflow-hidden bg-white">
-        <div class="container mx-auto px-5">
-          <div class="lg:w-4/5 flex">
+      <section className="text-gray-700 body-font overflow-hidden bg-white">
+        <div className="container mx-auto px-5">
+          <div className="lg:w-4/5 flex">
             <div className="my-36 ml-32 h-2/5 w-2/5">
               <CarouselItem imguno={imguno} imgdos={imgdos} imgtres={imgtres} />
             </div>
-            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-              <div className="py-4 border-b-2 border-gray-200">
-                <h1 class="text-gray-900 text-3xl title-font font-medium capitalize mb-3">
+            <div className="lg:w-1/2 ml-20 lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+              <div classNameName="py-4 border-b-2 border-gray-200">
+                <h1 className="text-gray-900 text-3xl title-font font-medium capitalize mb-3">
                   {brand} {name}
                 </h1>
-                <span class="font-medium text-3xl text-sky-500">${price}</span>
+                <span className="font-medium text-3xl text-sky-500">${price}</span>
               </div>
-              <h2 class="text-gray-900 text-xl title-font font-medium mt-7 ml-4">
+              <h2 className="text-gray-900 text-xl title-font font-medium mt-7 ml-4">
                 Caracteristicas Principales:
               </h2>
               <ul className="p-3 text-slate-800">
@@ -70,21 +72,22 @@ const ItemDetail = ({
                 </li>
               </ul>
 
-              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5">
-                <div class="flex ml-6 items-center">
-                  <span class="mr-3">Capacidad:</span>
-                  <div class="relative">
-                    <select class="rounded border appearance-none border-gray-400 py-2 focus:outline-none focus:border-red-500 text-base pl-3 pr-10">
-                      <option>64 GB</option>
+              <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5">
+                <div className="flex ml-6 items-center">
+                  <span className="mr-3">Capacidad:</span>
+                  <div className="relative">
+                    <select className="rounded border appearance-none border-gray-400 py-2 focus:outline-none focus:border-red-500 text-base pl-3 pr-10">
+                      <option>{memory}GB/{memoryram[0]}GB RAM</option>
+                      <option>{memory}GB/{memoryram[1]}GB RAM</option>
                     </select>
-                    <span class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                    <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
                       <svg
                         fill="none"
                         stroke="currentColor"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
-                        class="w-4 h-4"
+                        className="w-4 h-4"
                         viewBox="0 0 24 24"
                       >
                         <path d="M6 9l6 6 6-6"></path>
@@ -93,7 +96,7 @@ const ItemDetail = ({
                   </div>
                 </div>
               </div>
-              <div class="flex">
+              <div className="flex">
                 <ItemCount stock={stock} onAdd={handleOnAdd} />
               </div>
               {buy ? (

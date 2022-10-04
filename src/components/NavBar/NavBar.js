@@ -12,7 +12,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <nav className="flex items-center justify-between flex-wrap bg-slate-800 p-2">
+      <nav className="flex items-center justify-between flex-wrap bg-slate-800">
         <Link to="/">
           <div className="flex items-center flex-shrink-0 text-white mr-2">
             <img className=" ml-8 h-16 w-30" src={image} alt="Logo" />
@@ -46,7 +46,7 @@ const NavBar = () => {
             </Link>
             <button
               className="border-b text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28"
-              onMouseOverCapture={getDropDown}
+              onClick={getDropDown}
               type="button"
               >
               Productos
@@ -65,7 +65,7 @@ const NavBar = () => {
               placeholder="¿Qué estás buscando?  🔍︎"
             />
           </div>
-          <div>
+          <div className="mr-4">
             <CardWidget />
           </div>
         </div>

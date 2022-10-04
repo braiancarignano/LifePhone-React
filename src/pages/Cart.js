@@ -1,11 +1,11 @@
 import { useCartContext } from "../context/CartContext";
 import ItemCartContainer from "../components/ItemCartContainer/ItemCartContainer";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer/Footer";
 
 const Cart = () => {
   const {cart} = useCartContext();
 
-console.log(cart)
   return (   
       <div>
         {cart.length > 0 ? (
@@ -22,8 +22,8 @@ console.log(cart)
             </Link>
           </div>
         )}
+      <Footer/>
       </div>
-
   );
 };
 
