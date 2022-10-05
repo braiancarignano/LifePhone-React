@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/LifePhone-React/static/css/main.c2914470.css",
+    "main.js": "/LifePhone-React/static/js/main.21d50eeb.js",
+    "static/media/LifePhoneLogo.png": "/LifePhone-React/static/media/LifePhoneLogo.64c3ced991a38f9f4095.png",
+    "static/media/LifePhoneLogoBlack.png": "/LifePhone-React/static/media/LifePhoneLogoBlack.6cd79946a50d65818c16.png",
+    "index.html": "/LifePhone-React/index.html",
+    "main.c2914470.css.map": "/LifePhone-React/static/css/main.c2914470.css.map",
+    "main.21d50eeb.js.map": "/LifePhone-React/static/js/main.21d50eeb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2914470.css",
+    "static/js/main.21d50eeb.js"
+  ]
+}
