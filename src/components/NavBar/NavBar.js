@@ -46,7 +46,7 @@ const NavBar = () => {
             </Link>
             <button
               className="border-b text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28"
-              onClick={getDropDown}
+              onMouseEnter={getDropDown}
               type="button"
               >
               Productos

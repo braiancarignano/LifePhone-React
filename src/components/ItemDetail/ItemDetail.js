@@ -17,8 +17,8 @@ const ItemDetail = ({
   memoryram,
   screen,
   processor,
-  cameraBack,
-  cameraFront,
+  cameraback,
+  camerafront,
   batery,
   system,
   stock,
@@ -58,11 +58,11 @@ const ItemDetail = ({
                 </li>
                 <li className="p-1 font-thin">
                   <p className="font-medium inline">● Camara Trasera: </p>{" "}
-                  {cameraBack}
+                  {cameraback}
                 </li>
                 <li className="p-1 font-thin">
                   <p className="font-medium inline">● Camara Frontal: </p>{" "}
-                  {cameraFront}
+                  {camerafront}
                 </li>
                 <li className="p-1 font-thin">
                   <p className="font-medium inline">● Bateria: </p> {batery}
@@ -77,8 +77,7 @@ const ItemDetail = ({
                   <span className="mr-3">Capacidad:</span>
                   <div className="relative">
                     <select className="rounded border appearance-none border-gray-400 py-2 focus:outline-none focus:border-red-500 text-base pl-3 pr-10">
-                      <option>{memory}GB/{memoryram[0]}GB RAM</option>
-                      <option>{memory}GB/{memoryram[1]}GB RAM</option>
+                      <option>GB RAM</option>
                     </select>
                     <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
                       <svg

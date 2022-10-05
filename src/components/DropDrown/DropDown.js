@@ -14,6 +14,9 @@ const DropDown = () => {
       <Link to={`/product/brand/xiaomi`}>
       <button className="text-gray-700 border-b-2 block w-full text-left px-4 py-1 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Xiaomi</button>
       </Link>
+      <Link to={`/product/brand/motorola`}>
+      <button className="text-gray-700 border-b-2 block w-full text-left px-4 py-1 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Motorola</button>
+      </Link>
       <Link to={`/product`}>
       <button className="text-gray-700 block px-4 pt-4 w-full text-left text-sm font-medium" role="menuitem" tabindex="-1" id="menu-item-1">Todas las categorias</button>
       </Link>

@@ -7,6 +7,7 @@ import Product from "./pages/Product";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailConteiner/ItemDetailContainer";
 import Cart from "./pages/Cart";
+import Brand from "./pages/Brand";
 import Checkout from "./pages/Checkout";
 
 function App() {
@@ -22,8 +23,8 @@ function App() {
               element={<ItemListContainer />}
             />
             <Route
-              path="product/brand/:id"
-              element={<ItemListContainer />}
+              path="product/brand/:brand"
+              element={<Brand />}
             />
             <Route
               path="product/detail/:id"
