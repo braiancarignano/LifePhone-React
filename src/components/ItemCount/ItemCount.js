@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+//Contador para sumar o restar los productos que van al carrito
 const ItemCount = ({ stock, onAdd }) => {
   const [initial, setInitial] = useState(1);
   const increment = () => {
@@ -30,9 +30,9 @@ const ItemCount = ({ stock, onAdd }) => {
           stroke="currentColor"
         >
           <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M20 12H4"
           />
         </svg>
@@ -52,9 +52,9 @@ const ItemCount = ({ stock, onAdd }) => {
           stroke="currentColor"
         >
           <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M12 4v16m8-8H4"
           />
         </svg>

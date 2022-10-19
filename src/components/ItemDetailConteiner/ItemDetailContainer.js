@@ -9,15 +9,12 @@ import {
   getDocs,
 } from "firebase/firestore";
 import { db } from "../../firebase/firebaseConfig";
-import Loader from "../Loader/Loader";
-
+import LogoWhatsapp from "../LogoWhatsapp/LogoWhatsapp";
+//Funcion para extraer informacion de la base de datos segun ID y pasarla como prop a la vista de detalle
 const ItemDetailContainer = () => {
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(false);
   const { id } = useParams();
   useEffect(() => {
-    setLoading(true);
-
     const data = [];
     const getProducts = async () => {
       const q = query(
@@ -31,11 +28,10 @@ const ItemDetailContainer = () => {
       setProducts(data);
     };
     getProducts();
-    setLoading(false);
   }, [id]);
-  console.log(products);
   return (
     <div>
+      <LogoWhatsapp />
       {products.map((product) => (
         <ItemDetail key={product.id} {...product} data={products[0]} />
       ))}

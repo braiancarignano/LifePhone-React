@@ -1,17 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-
 import "./CarouselItem";
-
-// import required modules
 import { Pagination, Navigation } from "swiper";
 
-export default function App({imguno, imgdos, imgtres}) {
+// Renderiza carrusel de imagenes en el detalle del producto
+export default function App({ imguno, imgdos, imgtres }) {
   return (
     <>
       <Swiper
@@ -25,9 +21,15 @@ export default function App({imguno, imgdos, imgtres}) {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><img className="h-full w-full" src={imguno} alt=""/></SwiperSlide>
-        <SwiperSlide><img className="h-full w-full" src={imgdos} alt=""/></SwiperSlide>
-        <SwiperSlide><img className="h-full w-full" src={imgtres} alt=""/></SwiperSlide>
+        <SwiperSlide>
+          <img className="h-full w-full" src={imguno} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="h-full w-full" src={imgdos} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="h-full w-full" src={imgtres} alt="" />
+        </SwiperSlide>
       </Swiper>
     </>
   );

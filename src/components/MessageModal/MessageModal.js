@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { useCartContext } from "../../context/CartContext";
-
+import logoWhatsapp from "../../assets/whatsappcontact.png";
+//Renderiza mensaje con ID de compra/consulta y al finalizar (boton "volver a inicio") elimina informacion en carrito
 const MessageModal = ({ orderID, option }) => {
-    const {clearCart} = useCartContext();
+  const { clearCart } = useCartContext();
   return (
     <div className="w-2/3 m-auto h-full md:h-auto">
       <div className="bg-gray-100 border border-sky-500 rounded-lg shadow">
@@ -15,10 +16,23 @@ const MessageModal = ({ orderID, option }) => {
             El codigo de identificacion de tu {option} es:
           </p>
           <p className="text-sky-500 mb-3 text-3xl">{orderID}</p>
+          <a href="https://wa.me/5493517043367">
+            <button className=" px-3 py-1 mt- mx-auto shadow-lg shadow-green-500/30 bg-[#29A71A] text-white rounded disabled:opacity-50  flex items-center justify-center">
+              <img
+                className="h-10 w-10"
+                src={logoWhatsapp}
+                alt="logo whatsapp"
+              />
+              Contactate
+            </button>
+          </a>
           <Link to={`/`}>
-          <button onClick={() => clearCart()} className="py-4 px-6 mt-7 mx-auto shadow-lg shadow-sky-500/30 bg-sky-500 text-white rounded hover:bg-sky-600 active:bg-sky-300 disabled:opacity-50  flex items-center justify-center">
-            Volver a Inicio
-          </button>
+            <button
+              onClick={() => clearCart()}
+              className="py-3 px-3 mt-3 mx-auto shadow-lg shadow-sky-500/30 bg-sky-500 text-white rounded hover:bg-sky-600 active:bg-sky-300 disabled:opacity-50  flex items-center justify-center"
+            >
+              Volver a Inicio
+            </button>
           </Link>
         </div>
       </div>

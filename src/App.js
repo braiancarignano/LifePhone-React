@@ -4,12 +4,12 @@ import NavBar from "./components/NavBar/NavBar";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Product from "./pages/Product";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailConteiner/ItemDetailContainer";
 import Cart from "./pages/Cart";
 import Brand from "./pages/Brand";
+import Memory from "./pages/Memory";
 import Checkout from "./pages/Checkout";
-
+//Renderiza todos los componentes y crea rutas de navegacion
 function App() {
   return (
     <div className="App">
@@ -18,14 +18,8 @@ function App() {
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route
-              path="product/memory/:id"
-              element={<ItemListContainer />}
-            />
-            <Route
-              path="product/brand/:brand"
-              element={<Brand />}
-            />
+            <Route path="product/memory/:memory" element={<Memory />} />
+            <Route path="product/brand/:brand" element={<Brand />} />
             <Route
               path="product/detail/:id"
               element={<ItemDetailContainer />}

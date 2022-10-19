@@ -1,4 +1,4 @@
-
+//Configuraciones para uso de Firebase y autorizaciones
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 

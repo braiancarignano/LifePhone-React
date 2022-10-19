@@ -6,16 +6,16 @@ import { db } from "../firebase/firebaseConfig";
 import Filters from "../components/Filters/Filters";
 import Footer from "../components/Footer/Footer";
 import LogoWhatsapp from "../components/LogoWhatsapp/LogoWhatsapp";
-const Brand = () => {
-  //Declaracion de estado y funciones para extraer informacion de la base de datos segun su marca
+const Memory = () => {
+  //Declaracion de estado y funciones para extraer informacion de la base de datos segun su memory
   const [products, setProducts] = useState([]);
-  const { brand } = useParams();
+  const { memory } = useParams();
   useEffect(() => {
     const data = [];
     const getProducts = async () => {
       const q = query(
         collection(db, "smartphones"),
-        where("brand", "==", brand)
+        where("memory", "==", memory)
       );
       const querySnapshot = await getDocs(q);
       querySnapshot.forEach((doc) => {
@@ -24,8 +24,8 @@ const Brand = () => {
       setProducts(data);
     };
     getProducts();
-  }, [brand]);
-  //Renderizado de categoria "Marcas" con su menu de navegacion y productos
+  }, [memory]);
+  //Renderizado de categoria "Memory" con su menu de navegacion y productos
   return (
     <div>
       <LogoWhatsapp />
@@ -42,4 +42,4 @@ const Brand = () => {
   );
 };
 
-export default Brand;
+export default Memory;

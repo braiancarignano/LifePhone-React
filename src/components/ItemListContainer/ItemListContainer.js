@@ -1,31 +1,28 @@
 import { useEffect, useState } from "react";
 import ItemList from "../ItemList/ItemList";
-import Loader from "../Loader/Loader";
 import { collection, query, getDocs } from "firebase/firestore";
 import { db } from "../../firebase/firebaseConfig";
-
+//Funcion para traer informacion de los productos de la base de datos y envio de informacion para lista de productos
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(false);
-  
   useEffect(() => {
-    setLoading(true)
-    const data = []
+    const data = [];
     const getProducts = async () => {
-      const q = query(
-        collection(db, "smartphones"),
-      );
+      const q = query(collection(db, "smartphones"));
       const querySnapshot = await getDocs(q);
       querySnapshot.forEach((doc) => {
-        data.push({...doc.data(), id: doc.id });
+        data.push({ ...doc.data(), id: doc.id });
       });
-      setProducts(data)
+      setProducts(data);
     };
-    getProducts()
-    setLoading(false)
+    getProducts();
   }, []);
 
-  return <div>{loading ? <Loader /> : <ItemList products={products} />}</div>;
+  return (
+    <div>
+      <ItemList products={products} />
+    </div>
+  );
 };
 
 export default ItemListContainer;

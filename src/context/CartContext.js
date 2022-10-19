@@ -1,52 +1,50 @@
-import {createContext, useContext, useState } from 'react'
-
+import { createContext, useContext, useState, useEffect } from "react";
+//Creacion de CartContext para manejo de estados del carrito
 const CartContext = createContext([]);
-
-export const useCartContext = () => useContext(CartContext)
-
-
-
+export const useCartContext = () => useContext(CartContext);
+//Declara estado de carrito y agregado o eliminado del LocalStorage
 const CartProvider = ({ children }) => {
-
-    //work with cart
-
-    const [cart, setCart] = useState([]);
-
-    //add product to cart
-    const addProduct = (item, quantity) => {
-        let replaceCart;
-        let product = cart.find(product => product.id === item.id)
-        if (product) {
-            product.quantity += quantity;
-            replaceCart = [...cart]
-        } else {
-            replaceCart = [...cart, {...item, quantity: quantity }]
-        }
-        setCart(replaceCart);
+  const [cart, setCart] = useState(
+    JSON.parse(localStorage.getItem("localCart")) || []
+  );
+  useEffect(() => {
+    const localCart = JSON.parse(localStorage.getItem("localCart"));
+    if (localCart?.length > 0) {
+      setCart(localCart);
     }
+  }, []);
+  useEffect(() => {
+    localStorage.setItem("localCart", JSON.stringify(cart));
+  }, [cart]);
 
-    console.log('carrito :', cart);
-
-
-    //clear cart
-    const clearCart = () => setCart([]);
-
-    //not duplicated
-    const inCart = (id) => {
-        return cart.find(product => product.id === id) ? true : false;
+  //Agrega productos al carrito
+  const addProduct = (item, quantity) => {
+    let replaceCart;
+    let product = cart.find((product) => product.id === item.id);
+    if (product) {
+      product.quantity += quantity;
+      replaceCart = [...cart];
+    } else {
+      replaceCart = [...cart, { ...item, quantity: quantity }];
     }
-    //remove cart
-    const removeProductInCart = (id) => {
-        return setCart(cart.filter(product => product.id !== id))
-    }
+    setCart(replaceCart);
+  };
 
-    return (
+  //Elimina todos los productos del carrito
+  const clearCart = () => setCart([]);
 
-        <CartContext.Provider value={{cart, clearCart, inCart, removeProductInCart, addProduct}}>
-            {children}
-        </CartContext.Provider>
+  //Elimina un producto del carrito segun ID
+  const removeProductInCart = (id) => {
+    return setCart(cart.filter((product) => product.id !== id));
+  };
 
-    )
-}
+  return (
+    <CartContext.Provider
+      value={{ cart, clearCart, removeProductInCart, addProduct }}
+    >
+      {children}
+    </CartContext.Provider>
+  );
+};
 
-export default CartProvider
+export default CartProvider;

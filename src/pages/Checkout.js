@@ -1,12 +1,14 @@
 import { useCartContext } from "../context/CartContext";
 import Footer from "../components/Footer/Footer";
 import Form from "../components/Form/Form";
-
+import LogoWhatsapp from "../components/LogoWhatsapp/LogoWhatsapp";
 
 const Checkout = () => {
   const { cart } = useCartContext();
+  //Renderizado de Checkout final para confirmacion de pedido con datos de pedido y formulario
   return (
     <div>
+      <LogoWhatsapp />
       <div className="w-2/3 m-auto p-5">
         <h1 className="text-gray-600 text-3xl font-semibold p-2">
           Confirmacion de Pedido
@@ -21,7 +23,10 @@ const Checkout = () => {
       <div className="w-2/3 m-auto p-5">
         <h2 className="text-gray-600 text-2xl font-semibold p-3">Tu Pedido</h2>
         {cart.map((product) => (
-          <div className="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
+          <div
+            key={product.id}
+            className="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5"
+          >
             <div className="w-20">
               <img className="h-20" src={product.imguno} alt="" />
             </div>
@@ -46,7 +51,12 @@ const Checkout = () => {
           </div>
         ))}
       </div>
-      <Form button="Realizar Pedido" product={cart}/>
+      <Form
+        button="Realizar Pedido"
+        key={cart.id}
+        product={cart}
+        action="compra"
+      />
       <Footer />
     </div>
   );

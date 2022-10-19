@@ -5,7 +5,8 @@ import { useCartContext } from "../../context/CartContext";
 import CarouselItem from "../CarouselItem/CarouselItem";
 import "swiper/css/bundle";
 import "../CarouselItem/CarouselItem";
-
+import Footer from "../Footer/Footer";
+//Renderiza vista del detalle de producto segun su id y trae informacion a traves de props
 const ItemDetail = ({
   name,
   brand,
@@ -14,7 +15,6 @@ const ItemDetail = ({
   imgdos,
   imgtres,
   memory,
-  memoryram,
   screen,
   processor,
   cameraback,
@@ -24,8 +24,11 @@ const ItemDetail = ({
   stock,
   data,
 }) => {
+  //Funcion para agregar producto utilizada del context
   const { addProduct } = useCartContext();
+  //Declaracion de estado para mostrar boton para navegar al carrito
   const [buy, setBuy] = useState(false);
+  //Agrega producto al carrito con su informacion y cantidad
   const handleOnAdd = (quantity) => {
     addProduct(data, quantity);
     setBuy(true);
@@ -39,11 +42,13 @@ const ItemDetail = ({
               <CarouselItem imguno={imguno} imgdos={imgdos} imgtres={imgtres} />
             </div>
             <div className="lg:w-1/2 ml-20 lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-              <div classNameName="py-4 border-b-2 border-gray-200">
+              <div className="py-4 border-b-2 border-gray-200">
                 <h1 className="text-gray-900 text-3xl title-font font-medium capitalize mb-3">
                   {brand} {name}
                 </h1>
-                <span className="font-medium text-3xl text-sky-500">${price}</span>
+                <span className="font-medium text-3xl text-sky-500">
+                  ${price}
+                </span>
               </div>
               <h2 className="text-gray-900 text-xl title-font font-medium mt-7 ml-4">
                 Caracteristicas Principales:
@@ -76,22 +81,9 @@ const ItemDetail = ({
                 <div className="flex ml-6 items-center">
                   <span className="mr-3">Capacidad:</span>
                   <div className="relative">
-                    <select className="rounded border appearance-none border-gray-400 py-2 focus:outline-none focus:border-red-500 text-base pl-3 pr-10">
-                      <option>GB RAM</option>
-                    </select>
-                    <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-4 h-4"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M6 9l6 6 6-6"></path>
-                      </svg>
-                    </span>
+                    <section className="text-lg font-semibold">
+                      <p>{memory}GB</p>
+                    </section>
                   </div>
                 </div>
               </div>
@@ -116,6 +108,7 @@ const ItemDetail = ({
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

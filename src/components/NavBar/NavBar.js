@@ -1,21 +1,22 @@
-import {useState} from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import image from "../../assets/LifePhoneLogo.png";
 import CardWidget from "../CardWidget/CardWidget";
 import DropDown from "../DropDrown/DropDown";
 
 const NavBar = () => {
-  const [isOpen , SetIsOpen] = useState (false)
+  //Declaracion de estado y funcion para menu con opciones para navegar a categorias
+  const [isOpen, SetIsOpen] = useState(false);
   const getDropDown = () => {
-    isOpen === false ? SetIsOpen(true) : SetIsOpen(false)
+    isOpen === false ? SetIsOpen(true) : SetIsOpen(false);
   };
-
+  //Renderiza menu de navegacion en la parte superior
   return (
-    <div>
+    <div className="sticky top-0 z-50 shadow">
       <nav className="flex items-center justify-between flex-wrap bg-slate-800">
         <Link to="/">
           <div className="flex items-center flex-shrink-0 text-white mr-2">
-            <img className=" ml-8 h-16 w-30" src={image} alt="Logo" />
+            <img className=" ml-6 p-1 h-16 w-30" src={image} alt="Logo" />
           </div>
         </Link>
         <div className="block lg:hidden">
@@ -37,33 +38,25 @@ const NavBar = () => {
           id="menu"
           className="w-full block mx-auto text-center lg:flex-grow lg:flex lg:items-center lg:w-auto"
         >
-          <div className="text-sm lg:flex-grow">
-            <Link
-              to="/"
-              className="block border-b text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28"
-            >
-              Inicio
+          <div className="text-sm py-6 lg:flex-grow">
+            <Link to="/">
+              <button className="block border-b text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28">
+                Inicio
+              </button>
             </Link>
             <button
-              className="border-b text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28"
-              onMouseEnter={getDropDown}
+              className="block border-b text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28"
+              onClick={getDropDown}
               type="button"
-              >
+            >
               Productos
             </button>
-              {isOpen === true ? <DropDown/> : <></>}    
-            <Link
-              to="/contact"
-              className="block border-b text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800"
-            >
-              Contacto
+            {isOpen === true ? <DropDown /> : <></>}
+            <Link to="/contact">
+              <button className="block border-b text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800">
+                Contacto
+              </button>
             </Link>
-          </div>
-          <div>
-            <input
-              className="rounded-full shadow-inner border-slate-200 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500 py-1 px-2 m-8"
-              placeholder="¿Qué estás buscando?  🔍︎"
-            />
           </div>
           <div className="mr-4">
             <CardWidget />
