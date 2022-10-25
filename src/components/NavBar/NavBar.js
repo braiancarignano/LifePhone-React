@@ -10,18 +10,22 @@ const NavBar = () => {
   const getDropDown = () => {
     isOpen === false ? SetIsOpen(true) : SetIsOpen(false);
   };
+  const [openTab, setOpenTab] = useState(false);
+  const hiddenMenu = () => {
+    openTab === false ? setOpenTab(true) : setOpenTab(false);
+  };
   //Renderiza menu de navegacion en la parte superior
   return (
     <div className="sticky top-0 z-50 shadow">
       <nav className="flex items-center justify-between flex-wrap bg-slate-800">
         <Link to="/">
-          <div className="flex items-center flex-shrink-0 text-white mr-2">
-            <img className=" ml-6 p-1 h-16 w-30" src={image} alt="Logo" />
+          <div className="flex items-center my-2 flex-shrink-0 text-white mr-2">
+            <img className="ml-4 p-1 h-16 w-30" src={image} alt="Logo" />
           </div>
         </Link>
-        <div className="block lg:hidden">
+        <div className="block mr-2 lg:hidden">
           <button
-            id="boton"
+            onClick={hiddenMenu}
             className="flex items-center px-3 py-2 border rounded text-sky-200 border-sky-400 hover:text-white hover:border-white"
           >
             <svg
@@ -34,18 +38,21 @@ const NavBar = () => {
             </svg>
           </button>
         </div>
-        <div
+        {openTab === true ? (
+          <></>
+        ) : (
+          <div
           id="menu"
           className="w-full block mx-auto text-center lg:flex-grow lg:flex lg:items-center lg:w-auto"
         >
           <div className="text-sm py-6 lg:flex-grow">
             <Link to="/">
-              <button className="block border-b text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28">
+              <button className="block lg:border-b lg:text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28">
                 Inicio
               </button>
             </Link>
             <button
-              className="block border-b text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28"
+              className="block lg:border-b lg:text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28"
               onClick={getDropDown}
               type="button"
             >
@@ -53,7 +60,7 @@ const NavBar = () => {
             </button>
             {isOpen === true ? <DropDown /> : <></>}
             <Link to="/contact">
-              <button className="block border-b text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800">
+              <button className="block lg:border-b lg:text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800">
                 Contacto
               </button>
             </Link>
@@ -62,6 +69,7 @@ const NavBar = () => {
             <CardWidget />
           </div>
         </div>
+        )}
       </nav>
     </div>
   );

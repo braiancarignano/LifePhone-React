@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 //Renderiza menu desplegable al hacer click en el boton "Productos" del navegador
 const DropDown = () => {
   return (
-    <div className="relative inline-block text-left">
+    <div className="relative lg:inline-block text-left">
       <div
-        className="absolute right-9 z-10 p-3 mt-4 w-56 rounded-lg border-2  bg-white shadow-lg ring-black ring-opacity-5 focus:outline-none"
+        className="absolute lg:right-9 z-10 p-3 lg:mt-4 w-56 rounded-lg border-2  bg-white shadow-lg ring-black ring-opacity-5 focus:outline-none"
         role="menu"
         aria-orientation="vertical"
         aria-labelledby="menu-button"

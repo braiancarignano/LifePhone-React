@@ -2,8 +2,8 @@ import Swap from "../../assets/iphoneswap.png";
 //Renderiza imagen en seccion "inicio" con informacion
 const ItemExtra = () => {
   return (
-    <div className="w-full bg-slate-800 flex text-white mt-20">
-      <div className="p-10 text-center w-1/2">
+    <div className="w-full bg-slate-800 lg:flex text-white mt-20">
+      <div className="p-10 text-center lg:w-1/2">
         <h2 className="text-5xl font-semibold -mt-24 text-slate-800">
           EQUIPOS TESTER <p className="my-3 text-white">SEMINUEVOS</p>
         </h2>
@@ -23,14 +23,16 @@ const ItemExtra = () => {
           todas sus funciones. Además ayudas a prevenir el impacto a el medio
           ambiente.
         </p>
-        <a
+      </div>
+      <img className="lg:w-2/5 h-full m-auto" src={Swap} alt="iphone swap" />
+      <div className="pb-5 lg:absolute lg:mt-96 lg:ml-64">
+       <a
           href="https://wa.me/5493517043367"
-          className="py-4 w-44 mt-10 mx-auto shadow-lg shadow-slate-500/20 bg-sky-500 text-white rounded-2xl hover:bg-sky-600 active:bg-sky-300 disabled:opacity-50  flex items-center justify-center"
+          className="py-4 w-44 mb-10 mx-auto shadow-lg shadow-slate-500/20 bg-sky-500 text-white rounded-2xl hover:bg-sky-600 active:bg-sky-300 disabled:opacity-50  flex items-center justify-center"
         >
           Más Información
         </a>
-      </div>
-      <img className="w-2/5 h-full" src={Swap} alt="" />
+        </div>
     </div>
   );
 };

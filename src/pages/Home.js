@@ -1,7 +1,6 @@
 import Carousel from "../components/Carrousel/Carrousel";
 import "swiper/css/bundle";
 import Footer from "../components/Footer/Footer";
-import ItemNew from "../components/ItemNew/ItemNew";
 import ItemExtra from "../components/ItemExtra/ItemExtra";
 import Features from "../components/Features/Features";
 import LogoWhatsapp from "../components/LogoWhatsapp/LogoWhatsapp";
@@ -12,7 +11,6 @@ const Home = () => {
       <LogoWhatsapp />
       <Carousel />
       <Features />
-      <ItemNew />
       <ItemExtra />
       <Footer />
     </div>
