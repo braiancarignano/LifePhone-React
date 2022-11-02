@@ -27,7 +27,7 @@ const AboutUs = () => {
         </p>
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.003436382622!2d-64.18548488511497!3d-31.414031403280887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a282cfaee03f%3A0x4b13d1aa993dfd34!2sSan%20Mart%C3%ADn%20165%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1665971780196!5m2!1ses!2sar"
-          className="-ml-16 lg:-ml-0 w-80 lg:h-72 lg:w-[34rem]"
+          className="container -ml-16 lg:-ml-0 w-80 lg:h-72 lg:w-[34rem]"
           title="ubicacion"
           allowFullScreen=""
           loading="lazy"
