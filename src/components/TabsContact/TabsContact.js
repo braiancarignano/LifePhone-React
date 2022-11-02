@@ -12,7 +12,7 @@ const TabsContact = () => {
                         <li>
                             <button
                                 onClick={() => setOpenTab(1)}
-                                className={` ${openTab === 1 ? "bg-gray-200 text-white" : ""} inline-block px-20 py-2 text-gray-600 rounded-xl`}
+                                className={` ${openTab === 1 ? "bg-gray-200 text-white" : ""} inline-block px-10 lg:px-20 py-2 text-gray-600 rounded-xl`}
                             >
                                 Sobre Nosotros
                             </button>
@@ -20,7 +20,7 @@ const TabsContact = () => {
                         <li>
                             <button
                                 onClick={() => setOpenTab(2)}
-                                className={` ${openTab === 2 ? "bg-gray-200 text-white" : ""} inline-block px-20 py-2 text-gray-600 rounded-xl`}
+                                className={` ${openTab === 2 ? "bg-gray-200 text-white" : ""} inline-block px-10 lg:px-20 py-2 text-gray-600 rounded-xl`}
                             >
                                 Preguntas Frecuentes
                             </button>

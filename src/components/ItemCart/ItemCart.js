@@ -5,10 +5,10 @@ const ItemCart = ({ product, removeProductInCart }) => {
   return (
     <div className="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
       <div className="flex w-2/5">
-        <div className="w-20">
-          <img className="h-20" src={product.imguno} alt="" />
+        <div className="lg:w-20 w-0">
+          <img className="invisible lg:visible h-20" src={product.imguno} alt="" />
         </div>
-        <div className="flex flex-col justify-between ml-4 flex-grow">
+        <div className="flex flex-col justify-between ml-3 flex-grow">
           <span className="font-semibold text-slate-800">{product.name}</span>
           <span className="text-gray-600 text-xs capitalize">
             {product.brand}

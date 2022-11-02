@@ -2,9 +2,9 @@ import Swap from "../../assets/iphoneswap.png";
 //Renderiza imagen en seccion "inicio" con informacion
 const ItemExtra = () => {
   return (
-    <div className="w-full bg-slate-800 lg:flex text-white mt-20">
+    <div className="w-full bg-slate-800 lg:flex text-white mt-28 lg:mt-20">
       <div className="p-10 text-center lg:w-1/2">
-        <h2 className="text-5xl font-semibold -mt-24 text-slate-800">
+        <h2 className="text-5xl font-semibold -mt-36 lg:-mt-24 text-slate-800">
           EQUIPOS TESTER <p className="my-3 text-white">SEMINUEVOS</p>
         </h2>
         <h3 className="mt-14 text-2xl font-semibold">
@@ -28,6 +28,7 @@ const ItemExtra = () => {
       <div className="pb-5 lg:absolute lg:mt-96 lg:ml-64">
        <a
           href="https://wa.me/5493517043367"
+          target="blank_"
           className="py-4 w-44 mb-10 mx-auto shadow-lg shadow-slate-500/20 bg-sky-500 text-white rounded-2xl hover:bg-sky-600 active:bg-sky-300 disabled:opacity-50  flex items-center justify-center"
         >
           Más Información

@@ -10,7 +10,7 @@ const NavBar = () => {
   const getDropDown = () => {
     isOpen === false ? SetIsOpen(true) : SetIsOpen(false);
   };
-  const [openTab, setOpenTab] = useState(false);
+  const [openTab, setOpenTab] = useState(true);
   const hiddenMenu = () => {
     openTab === false ? setOpenTab(true) : setOpenTab(false);
   };
@@ -39,20 +39,18 @@ const NavBar = () => {
           </button>
         </div>
         {openTab === true ? (
-          <></>
-        ) : (
           <div
           id="menu"
-          className="w-full block mx-auto text-center lg:flex-grow lg:flex lg:items-center lg:w-auto"
+          className="invisible text-xs lg:visible w-full mx-auto text-center lg:flex-grow lg:flex lg:items-center lg:w-auto"
         >
-          <div className="text-sm py-6 lg:flex-grow">
+          <div className="lg:py-6 lg:flex-grow">
             <Link to="/">
-              <button className="block lg:border-b lg:text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28">
+              <button className="lg:border-b lg:text-left lg:text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28">
                 Inicio
               </button>
             </Link>
             <button
-              className="block lg:border-b lg:text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28"
+              className="lg:border-b lg:text-left lg:text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28"
               onClick={getDropDown}
               type="button"
             >
@@ -60,12 +58,41 @@ const NavBar = () => {
             </button>
             {isOpen === true ? <DropDown /> : <></>}
             <Link to="/contact">
-              <button className="block lg:border-b lg:text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800">
+              <button className="lg:border-b lg:text-left lg:text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800">
                 Contacto
               </button>
             </Link>
           </div>
-          <div className="mr-4">
+          <div className="lg:mr-4 absolute lg:static">
+            <CardWidget />
+          </div>
+        </div>
+        ) : (
+          <div
+          id="menu"
+          className="w-full block mx-auto text-center lg:flex-grow lg:flex lg:items-center lg:w-auto"
+        >
+          <div className="text-sm py-6 lg:flex-grow">
+            <Link to="/">
+              <button className="block ml-4 lg:border-b lg:text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28">
+                Inicio
+              </button>
+            </Link>
+            <button
+              className="block ml-4 lg:border-b lg:text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800 lg:mr-28"
+              onClick={getDropDown}
+              type="button"
+            >
+              Productos
+            </button>
+            {isOpen === true ? <DropDown /> : <></>}
+            <Link to="/contact">
+              <button className="block ml-4 lg:border-b lg:text-left text-lg lg:inline-block lg:mt-0 lg:border-transparent transition ease-in-out delay-150 duration-300 text-white hover:text-sky-400 hover:border-sky-800">
+                Contacto
+              </button>
+            </Link>
+          </div>
+          <div className="mb-4 ml-4">
             <CardWidget />
           </div>
         </div>

@@ -17,7 +17,7 @@ const ItemCount = ({ stock, onAdd }) => {
     }
   };
   return (
-    <div className="inline-flex items-center mx-28">
+    <div className="inline-flex items-center mx-8 lg:mx-28">
       <button
         onClick={decrement}
         className="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"

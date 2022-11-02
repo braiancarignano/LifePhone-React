@@ -27,8 +27,8 @@ const ItemCartContainer = () => {
   return (
     <div>
       <div className="container mx-auto mt-10">
-        <div className="flex shadow-md my-10">
-          <div className="w-3/4 bg-white px-10 py-10">
+        <div className="lg:flex shadow-md my-10">
+          <div className="lg:w-3/4 bg-white px-10 py-10">
             <div className="flex justify-between border-b pb-8">
               <h1 className="font-semibold text-2xl">Carrito</h1>
             </div>
@@ -36,13 +36,13 @@ const ItemCartContainer = () => {
               <h3 className="font-semibold text-gray-600 text-xs uppercase w-2/5">
                 Detalles de Producto
               </h3>
-              <h3 className="font-semibold text-gray-600 text-xs uppercase w-1/5 text-center">
+              <h3 className="font-semibold mx-2 text-gray-600 text-xs uppercase w-1/5 text-center">
                 Cantidad
               </h3>
-              <h3 className="font-semibold text-gray-600 text-xs uppercase w-1/5 text-center">
+              <h3 className="font-semibold mx-2 text-gray-600 text-xs uppercase w-1/5 text-center">
                 Subtotal
               </h3>
-              <h3 className="font-semibold text-gray-600 text-xs uppercase w-1/5 text-center">
+              <h3 className="font-semibold mx-2 text-gray-600 text-xs uppercase w-1/5 text-center">
                 Precio Total
               </h3>
             </div>
@@ -68,7 +68,7 @@ const ItemCartContainer = () => {
             </Link>
           </div>
 
-          <div id="summary" className="w-1/4 px-8 py-10">
+          <div id="summary" className="lg:w-1/4 px-8 py-10">
             <h1 className="font-semibold text-2xl border-b pb-8">
               Resumen Carrito
             </h1>

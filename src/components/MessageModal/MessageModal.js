@@ -15,8 +15,8 @@ const MessageModal = ({ orderID, option }) => {
           <p className="text-gray-600 mb-3 ">
             El codigo de identificacion de tu {option} es:
           </p>
-          <p className="text-sky-500 mb-3 text-3xl">{orderID}</p>
-          <a href="https://wa.me/5493517043367">
+          <p className="text-sky-500 mb-3 text-xl lg:text-3xl">{orderID}</p>
+          <a target="blank_" href="https://wa.me/5493517043367">
             <button className=" px-3 py-1 mt- mx-auto shadow-lg shadow-green-500/30 bg-[#29A71A] text-white rounded disabled:opacity-50  flex items-center justify-center">
               <img
                 className="h-10 w-10"

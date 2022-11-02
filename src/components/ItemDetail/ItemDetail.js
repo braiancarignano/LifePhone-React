@@ -37,11 +37,11 @@ const ItemDetail = ({
     <div>
       <section className="text-gray-700 body-font overflow-hidden bg-white">
         <div className="container mx-auto px-5">
-          <div className="lg:w-4/5 flex">
-            <div className="my-36 ml-32 h-2/5 w-2/5">
+          <div className="lg:w-4/5 lg:flex">
+            <div className="lg:my-36 lg:ml-32 lg:h-2/5 lg:w-2/5">
               <CarouselItem imguno={imguno} imgdos={imgdos} imgtres={imgtres} />
             </div>
-            <div className="lg:w-1/2 ml-20 lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+            <div className="lg:w-1/2 ml-8 lg:ml-20 lg:pl-10 lg:py-6 mt-6 lg:mt-0">
               <div className="py-4 border-b-2 border-gray-200">
                 <h1 className="text-gray-900 text-3xl title-font font-medium capitalize mb-3">
                   {brand} {name}
